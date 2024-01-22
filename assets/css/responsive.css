@@ -1,0 +1,101 @@
+/* pc */
+@media (min-width: 64em) {
+    
+}
+/* tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+    
+}
+
+/* tablet & mobile */
+@media (max-width: 63.9375em) {
+    .place-buy-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+
+    .socials-list a {
+        margin: 0 8px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .btn { /*fix nút trên iphone*/
+        appearance: none;
+        -webkit-appearance: none;
+    }
+
+}
+
+/* mobile */
+@media (max-width: 46.1875em) {
+    .s-mt8 {
+        margin-top: 8px;
+    }
+
+    #header {
+        position: fixed;
+        overflow: hidden; /*ẩn các thuộc tính bị tràng ra khỏi class cha*/
+    }
+
+    #nav li {
+        display: block;
+    }
+
+    #nav > li:first-child { /*pseudo-classes*/
+        display: inline-block;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav .subnav {
+        position: initial;/*giá trị mặc định vì nếu để absolute thì sẽ kế thừa cả overflow: hidden; của tk cha nên nó sẽ mất đi vì tràn ra ngoài*/ 
+        background-color: #ccc;
+    }
+
+    #nav .subnav a {
+        padding: 1px 36px;
+    }
+
+    
+
+    .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block; 
+        padding: 0;                     
+    }
+
+    .member-item {
+        width: 100%;
+        padding-top: 31px;
+    }
+
+    #content .member-avt {
+        width: 60%;
+    }
+
+    .s-col-full {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin-top: 32px;
+    }
+
+    .form-submit-btn {
+        width: 100%;
+    
+    }
+}
